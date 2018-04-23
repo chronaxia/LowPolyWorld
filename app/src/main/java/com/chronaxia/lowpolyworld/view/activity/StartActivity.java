@@ -37,6 +37,12 @@ public class StartActivity extends BaseActivity implements IStartView{
 
     @Override
     protected void initView() {
+
+    }
+
+    @Override
+    public void getPermissionsSuccess() {
+        LowPolyWorldApp.getInstance().initDbHelp();
         Observable.just(0)
                 .subscribeOn(Schedulers.io())
                 .compose(this.<Integer>bindToLifecycle())
@@ -49,11 +55,6 @@ public class StartActivity extends BaseActivity implements IStartView{
                         startActivity(intent);
                     }
                 });
-    }
-
-    @Override
-    public void getPermissionsSuccess() {
-        LowPolyWorldApp.getInstance().initDbHelp();
     }
 
     @Override
