@@ -1,16 +1,12 @@
 package com.chronaxia.lowpolyworld.view.activity;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.widget.Toast;
 
 import com.chronaxia.lowpolyworld.R;
 import com.chronaxia.lowpolyworld.app.LowPolyWorldApp;
-import com.chronaxia.lowpolyworld.presenter.IStartPresenter;
-import com.chronaxia.lowpolyworld.presenter.StartPresenterImpl;
-import com.chronaxia.lowpolyworld.view.viewer.IStartView;
-import com.jakewharton.rxbinding2.view.RxView;
+import com.chronaxia.lowpolyworld.presenter.StartPresenter;
+import com.chronaxia.lowpolyworld.presenter.contract.StartContract;
 
 import java.util.concurrent.TimeUnit;
 
@@ -20,9 +16,9 @@ import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.functions.Consumer;
 import io.reactivex.schedulers.Schedulers;
 
-public class StartActivity extends BaseActivity implements IStartView{
+public class StartActivity extends BaseActivity implements StartContract.View{
 
-    private IStartPresenter startPresenter;
+    private StartContract.Presenter presenter;
 
     @Override
     protected int setContentView() {
@@ -31,8 +27,8 @@ public class StartActivity extends BaseActivity implements IStartView{
 
     @Override
     protected void initData() {
-        startPresenter = new StartPresenterImpl(this, this);
-        startPresenter.getPermissions(this);
+        presenter = new StartPresenter(this, this);
+        presenter.getPermissions(this);
     }
 
     @Override
@@ -43,11 +39,12 @@ public class StartActivity extends BaseActivity implements IStartView{
     @Override
     public void getPermissionsSuccess() {
         LowPolyWorldApp.getInstance().initDbHelp();
+        LowPolyWorldApp.getInstance().initWindow();
         Observable.just(0)
                 .subscribeOn(Schedulers.io())
                 .compose(this.<Integer>bindToLifecycle())
                 .observeOn(AndroidSchedulers.mainThread())
-                .delay(3000, TimeUnit.MILLISECONDS)
+                .delay(1000, TimeUnit.MILLISECONDS)
                 .subscribe(new Consumer<Integer>() {
                     @Override
                     public void accept(Integer integer) throws Exception {

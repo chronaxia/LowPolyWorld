@@ -1,11 +1,20 @@
 package com.chronaxia.lowpolyworld.app;
 
 import android.app.Application;
+import android.content.Context;
+import android.content.res.Resources;
 import android.database.sqlite.SQLiteDatabase;
+import android.util.DisplayMetrics;
+import android.view.Display;
+import android.view.WindowManager;
 
+import com.bumptech.glide.annotation.GlideModule;
+import com.bumptech.glide.module.AppGlideModule;
 import com.chronaxia.lowpolyworld.model.local.greenDao.GreenDaoContext;
 import com.chronaxia.lowpolyworld.model.local.greenDao.gen.DaoMaster;
 import com.chronaxia.lowpolyworld.model.local.greenDao.gen.DaoSession;
+
+import java.lang.reflect.Method;
 
 /**
  * Created by 一非 on 2018/4/8.
@@ -19,6 +28,8 @@ public class LowPolyWorldApp extends Application{
     private SQLiteDatabase db;
     private DaoMaster daoMaster;
     private DaoSession daoSession;
+    private int x;
+    private int y;
 
     @Override
     public void onCreate() {
@@ -38,6 +49,43 @@ public class LowPolyWorldApp extends Application{
         db = helper.getWritableDatabase();
         daoMaster = new DaoMaster(db);
         daoSession = daoMaster.newSession();
+    }
+
+    public float getX() {
+        if (x == 0) {
+            initWindow();
+            return x;
+        } else {
+            return x;
+        }
+    }
+
+    public float getY() {
+        if (y == 0) {
+            initWindow();
+            return y;
+        } else {
+            return y;
+        }
+    }
+
+    public void initWindow(){
+        int dpi = 0;
+        WindowManager windowManager = (WindowManager) getSystemService(Context.WINDOW_SERVICE);
+        Display display = windowManager.getDefaultDisplay();
+        DisplayMetrics displayMetrics = new DisplayMetrics();
+        @SuppressWarnings("rawtypes")
+        Class c;
+        try {
+            c = Class.forName("android.view.Display");
+            @SuppressWarnings("unchecked")
+            Method method = c.getMethod("getRealMetrics",DisplayMetrics.class);
+            method.invoke(display, displayMetrics);
+            x = displayMetrics.widthPixels;
+            y = displayMetrics.heightPixels;
+        }catch(Exception e){
+            e.printStackTrace();
+        }
     }
 
     public DaoSession getDaoSession() {

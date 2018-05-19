@@ -29,7 +29,7 @@ public class GreenDaoContext extends ContextWrapper {
      */
     @Override
     public File getDatabasePath(String dbName) {
-        String path = Environment.getExternalStorageDirectory().getPath();
+        String path = Environment.getExternalStorageDirectory().getPath() + File.separator + "LowPolyWorld" + File.separator ;
         File dir = new File(path);
         if (!dir.exists()) {
             dir.mkdirs();

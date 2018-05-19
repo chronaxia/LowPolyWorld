@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scenic_spots>
+    <scenic_spot>
+        <name>埃菲尔铁塔</name>
+        <phonetic>āi fēi ěr tiě tǎ</phonetic>
+        <english>the Eiffel Tower</english>
+        <continent>欧洲</continent>
+        <location>法国巴黎战神广场</location>
+        <describe>0.0</describe>
+    </scenic_spot>
+</scenic_spots>

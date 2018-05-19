@@ -3,8 +3,7 @@ package com.chronaxia.lowpolyworld.presenter;
 import android.Manifest;
 import android.app.Activity;
 
-import com.chronaxia.lowpolyworld.view.viewer.IStartView;
-import com.tbruyelle.rxpermissions2.Permission;
+import com.chronaxia.lowpolyworld.presenter.contract.StartContract;
 import com.tbruyelle.rxpermissions2.RxPermissions;
 import com.trello.rxlifecycle2.LifecycleProvider;
 import com.trello.rxlifecycle2.android.ActivityEvent;
@@ -16,13 +15,13 @@ import io.reactivex.functions.Consumer;
  * Created by 一非 on 2018/4/23.
  */
 
-public class StartPresenterImpl extends BaseActivityPresenter implements IStartPresenter{
+public class StartPresenter extends BaseActivityPresenter implements StartContract.Presenter{
 
-    private IStartView startView;
+    private StartContract.View view;
 
-    public StartPresenterImpl(LifecycleProvider<ActivityEvent> provider, IStartView startView) {
+    public StartPresenter(LifecycleProvider<ActivityEvent> provider, StartContract.View view) {
         super(provider);
-        this.startView = startView;
+        this.view = view;
     }
 
     @Override
@@ -38,20 +37,20 @@ public class StartPresenterImpl extends BaseActivityPresenter implements IStartP
                     @Override
                     public void accept(Boolean aBoolean) throws Exception {
                         if (aBoolean) {
-                            if (startView != null) {
-                                startView.getPermissionsSuccess();
+                            if (view != null) {
+                                view.getPermissionsSuccess();
                             }
                         } else {
-                            if (startView != null) {
-                                startView.getPermissionsFailed();
+                            if (view != null) {
+                                view.getPermissionsFailed();
                             }
                         }
                     }
                 }, new Consumer<Throwable>() {
                     @Override
                     public void accept(Throwable throwable) throws Exception {
-                        if (startView != null) {
-                            startView.getPermissionsFailed();
+                        if (view != null) {
+                            view.getPermissionsFailed();
                         }
                     }
                 });
@@ -59,6 +58,6 @@ public class StartPresenterImpl extends BaseActivityPresenter implements IStartP
 
     @Override
     public void doDestroy() {
-        startView = null;
+        view = null;
     }
 }
