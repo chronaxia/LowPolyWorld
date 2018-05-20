@@ -4,23 +4,34 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.chronaxia.lowpolyworld.R;
 import com.chronaxia.lowpolyworld.model.entity.ScenicSpot;
+import com.jakewharton.rxbinding2.view.RxView;
+
+import net.frakbot.jumpingbeans.JumpingBeans;
+
+import java.util.concurrent.TimeUnit;
 
 import butterknife.BindView;
+import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.functions.Consumer;
 
 public class CustomFragmentBottom extends BaseFragment {
 
-    @BindView(R.id.tv_test_bottom)
-    TextView tvTestBottom;
+    @BindView(R.id.tv_scenic_spot_phonetic)
+    TextView tvScenicSpotPhonetic;
+    @BindView(R.id.tv_scenic_spot_name)
+    TextView tvScenicSpotName;
 
     private OnFragmentInteractionListener mListener;
-
+    private JumpingBeans jumpingBeans;
     private ScenicSpot scenicSpot;
 
     public CustomFragmentBottom() {
@@ -48,19 +59,19 @@ public class CustomFragmentBottom extends BaseFragment {
     @Override
     protected void initView() {
         if (scenicSpot != null) {
-            tvTestBottom.setText(scenicSpot.getName());
+            tvScenicSpotPhonetic.setText(scenicSpot.getPhonetic());
+            jumpingBeans = JumpingBeans.with(tvScenicSpotPhonetic)
+                    .makeTextJump(0, tvScenicSpotPhonetic.getText().toString().length())
+                    .setIsWave(true)
+                    .setLoopDuration(2000)
+                    .build();
+            tvScenicSpotName.setText(scenicSpot.getName());
         }
     }
 
     @Override
     public void onDestroy() {
         super.onDestroy();
-    }
-
-    public void onButtonPressed(Uri uri) {
-        if (mListener != null) {
-            mListener.onFragmentInteraction(uri);
-        }
     }
 
     @Override
@@ -78,9 +89,10 @@ public class CustomFragmentBottom extends BaseFragment {
     public void onDetach() {
         super.onDetach();
         mListener = null;
+        jumpingBeans.stopJumping();
     }
 
     public interface OnFragmentInteractionListener {
-        void onFragmentInteraction(Uri uri);
+        void onLowpoly();
     }
 }

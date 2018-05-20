@@ -82,6 +82,8 @@ public class ScenicSpotsModel {
                         scenicSpot.setLocation(parser.nextText());
                     } else if ("describe".equals(parser.getName())) {
                         scenicSpot.setDescribe(parser.nextText());
+                    } else if ("picture".equals(parser.getName())) {
+                        scenicSpot.setPicture(parser.nextText());
                     }
                     break;
                 case XmlPullParser.END_TAG:

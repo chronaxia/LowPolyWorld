@@ -18,8 +18,8 @@ public class MyExpandingPagerFactory extends ExpandingPagerFactory {
         ViewGroup.LayoutParams layoutParams = viewPager.getLayoutParams();
 //        layoutParams.height = ((Activity)viewPager.getContext()).getWindowManager().getDefaultDisplay().getHeight() / 7 * 5;
 //        layoutParams.width = (int)((double)layoutParams.height / 0.75D);
-        layoutParams.height = (int)(LowPolyWorldApp.getInstance().getY() * 0.5);
-        layoutParams.width = (int)LowPolyWorldApp.getInstance().getX() / 7 * 5;
+        layoutParams.height = (int)(LowPolyWorldApp.getInstance().getY() * 0.7);
+        layoutParams.width = (int)(LowPolyWorldApp.getInstance().getX() * 0.7);
         viewPager.setOffscreenPageLimit(2);
         if(viewPager.getParent() instanceof ViewGroup) {
             ViewGroup viewParent = (ViewGroup)viewPager.getParent();

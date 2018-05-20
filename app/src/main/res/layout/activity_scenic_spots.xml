@@ -4,7 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#8fced7"
     tools:context="com.chronaxia.lowpolyworld.view.activity.ScenicSpotsActivity">
+
+    <ImageView
+        android:id="@+id/iv_scenic_spot_back"
+        android:src="@drawable/ic_back"
+        android:scaleType="fitCenter"
+        android:layout_gravity="start|top"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
 
     <android.support.v4.view.ViewPager
         android:id="@+id/vp_scenic_spots"

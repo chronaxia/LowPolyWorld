@@ -1,23 +1,32 @@
 package com.chronaxia.lowpolyworld.view.fragment;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.chronaxia.lowpolyworld.R;
 import com.chronaxia.lowpolyworld.model.entity.ScenicSpot;
+import com.chronaxia.lowpolyworld.util.BitmapUtils;
+import com.chronaxia.lowpolyworld.util.LowPoly;
+
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
 
 import butterknife.BindView;
 
 public class CustomFragmentTop extends BaseFragment {
 
-    @BindView(R.id.tv_test_top)
-    TextView tvTestTop;
+    @BindView(R.id.iv_scenic_picture)
+    ImageView ivScenicPicture;
 
     private OnFragmentInteractionListener mListener;
 
@@ -48,7 +57,9 @@ public class CustomFragmentTop extends BaseFragment {
     @Override
     protected void initView() {
         if (scenicSpot != null) {
-            tvTestTop.setText(scenicSpot.getName());
+            Glide.with(getContext())
+                    .load(getResources().getIdentifier(scenicSpot.getPicture(), "drawable", getContext().getPackageName()))
+                    .into(ivScenicPicture);
         }
     }
 

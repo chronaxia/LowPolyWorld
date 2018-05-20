@@ -31,13 +31,19 @@ public class CustomExpandingFragment extends ExpandingFragment {
         }
     }
 
+    public CustomFragmentTop customFragmentTop;
+    public CustomFragmentTop getTop() {
+        return customFragmentTop;
+    }
     @Override
     public Fragment getFragmentTop() {
-        return CustomFragmentTop.newInstance(scenicSpot);
+        customFragmentTop = CustomFragmentTop.newInstance(scenicSpot);
+        return customFragmentTop;
     }
 
     @Override
     public Fragment getFragmentBottom() {
         return CustomFragmentBottom.newInstance(scenicSpot);
     }
+
 }

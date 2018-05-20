@@ -11,6 +11,8 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        renderscriptTargetApi 18
+        renderscriptSupportModeEnabled true
     }
     buildTypes {
         release {
@@ -55,6 +57,7 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.6.1'
     compile 'com.github.chrisbanes:PhotoView:2.1.3'
     compile 'com.github.qs-lll:ExpandingPager:39559a9b78'
+    compile 'net.frakbot:jumpingbeans:1.3.0'
 }
 
 greendao {

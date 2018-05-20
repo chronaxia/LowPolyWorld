@@ -6,6 +6,7 @@
         <english>the Eiffel Tower</english>
         <continent>欧洲</continent>
         <location>法国巴黎战神广场</location>
+        <picture>the_eiffel_tower</picture>
         <describe>0.0</describe>
     </scenic_spot>
 </scenic_spots>

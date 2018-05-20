@@ -16,6 +16,7 @@ public class ScenicSpot implements Serializable{
     private String english;
     private String location;
     private String describe;
+    private String picture;
 
     public String getName() {
         return name;
@@ -65,6 +66,14 @@ public class ScenicSpot implements Serializable{
         this.describe = describe;
     }
 
+    public String getPicture() {
+        return picture;
+    }
+
+    public void setPicture(String picture) {
+        this.picture = picture;
+    }
+
     @Override
     public String toString() {
         return "ScenicSpot{" +
@@ -74,6 +83,7 @@ public class ScenicSpot implements Serializable{
                 ", english='" + english + '\'' +
                 ", location='" + location + '\'' +
                 ", describe='" + describe + '\'' +
+                ", picture='" + picture + '\'' +
                 '}';
     }
 }

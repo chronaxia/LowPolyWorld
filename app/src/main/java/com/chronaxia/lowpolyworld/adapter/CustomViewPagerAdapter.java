@@ -29,6 +29,10 @@ public class CustomViewPagerAdapter  extends ExpandingViewPagerAdapter {
         notifyDataSetChanged();
     }
 
+    public List<ScenicSpot> getList() {
+        return list;
+    }
+
     @Override
     public Fragment getItem(int position) {
         return CustomExpandingFragment.newInstance(list.get(position));
