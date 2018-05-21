@@ -58,7 +58,7 @@ public class CustomFragmentTop extends BaseFragment {
     protected void initView() {
         if (scenicSpot != null) {
             Glide.with(getContext())
-                    .load(getResources().getIdentifier(scenicSpot.getPicture(), "drawable", getContext().getPackageName()))
+                    .load(getResources().getIdentifier(scenicSpot.getPicture(), "mipmap", getContext().getPackageName()))
                     .into(ivScenicPicture);
         }
     }

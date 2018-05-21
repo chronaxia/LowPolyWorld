@@ -10,10 +10,14 @@ import android.support.v8.renderscript.Int2;
 import android.support.v8.renderscript.RenderScript;
 import android.util.Log;
 
-import com.chronaxia.util.ScriptC_lowpoly;
+import com.chronaxia.lowpolyworld.ScriptC_lowpoly;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import io.reactivex.Observable;
+import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.functions.Consumer;
 
 /**
  * Created by reikyZ on 16/10/1.
@@ -53,7 +57,7 @@ public class LowPoly {
         scriptLowPoly.invoke_process(1);
     }
 
-    private static void createLowPolyScript(Context context, int accuracy, final Bitmap bitmapIn, final Bitmap bitmapOut, final Callback callback) {
+    private static void createLowPolyScript(final Context context, final int accuracy, final Bitmap bitmapIn, final Bitmap bitmapOut, final Callback callback) {
         mRs = RenderScript.create(context);
 
         allocationOriginal = Allocation.createFromBitmap(mRs, bitmapIn,
@@ -164,7 +168,14 @@ public class LowPoly {
 
                     //MainActivity.mHandler.sendEmptyMessageAtTime(RENDERED_FLAG, 0);
                     try {
-                        callback.lowpoly();
+                        Observable.just(0)
+                                .observeOn(AndroidSchedulers.mainThread())
+                                .subscribe(new Consumer<Integer>() {
+                                    @Override
+                                    public void accept(Integer integer) throws Exception {
+                                        callback.lowpoly();
+                                    }
+                                });
                     } catch (Exception e) {
                         e.printStackTrace();
                     }

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scenic_spots>
+    <scenic_spot>
+        <name>长城</name>
+        <phonetic>zhǎng chéng</phonetic>
+        <english>The Great Wall</english>
+        <picture>the_great_wall</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>中国</name>
+        <phonetic>zhōng guó</phonetic>
+        <english>China</english>
+        <picture>china_flag</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>伟大</name>
+        <phonetic>wěi dà</phonetic>
+        <english>great</english>
+        <picture>the_great_wall_1</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>长度</name>
+        <phonetic>zhǎng dù</phonetic>
+        <english>length</english>
+        <picture>the_great_wall_2</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+</scenic_spots>

@@ -9,4 +9,22 @@
         <picture>the_eiffel_tower</picture>
         <describe>0.0</describe>
     </scenic_spot>
+    <scenic_spot>
+        <name>比萨斜塔</name>
+        <phonetic>bǐ sà xié tǎ</phonetic>
+        <english>Leaning Tower of Pisa</english>
+        <continent>欧洲</continent>
+        <location>意大利托斯卡纳省比萨城</location>
+        <picture>leaning_tower_of_pisa</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>伊丽莎白塔</name>
+        <phonetic>yī lì shā bái tǎ</phonetic>
+        <english>Elizabeth Tower</english>
+        <continent>欧洲</continent>
+        <location>英国伦敦</location>
+        <picture>elizabeth_tower</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
 </scenic_spots>

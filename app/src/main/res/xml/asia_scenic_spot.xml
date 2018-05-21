@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scenic_spots>
+    <scenic_spot>
+        <name>长城</name>
+        <phonetic>chǎng chéng</phonetic>
+        <english>The Great Wall</english>
+        <continent>亚洲</continent>
+        <location>中国北方</location>
+        <picture>the_great_wall</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+</scenic_spots>

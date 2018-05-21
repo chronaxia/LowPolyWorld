@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scenic_spots>
+    <scenic_spot>
+        <name>比萨斜塔</name>
+        <phonetic>bǐ sà xié tǎ</phonetic>
+        <english>Leaning Tower of Pisa</english>
+        <picture>leaning_tower_of_pisa</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>意大利</name>
+        <phonetic>yì dà lì</phonetic>
+        <english>Italia</english>
+        <picture>italia_flag</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>教堂</name>
+        <phonetic>jiào táng</phonetic>
+        <english>Church</english>
+        <picture>leaning_tower_of_pisa_1</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>倾斜</name>
+        <phonetic>qīng xié</phonetic>
+        <english>lean</english>
+        <picture>leaning_tower_of_pisa_2</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+</scenic_spots>

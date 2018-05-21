@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scenic_spots>
+    <scenic_spot>
+        <name>伊丽莎白塔</name>
+        <phonetic>yī lì shā bái tǎ</phonetic>
+        <english>Elizabeth Tower</english>
+        <picture>elizabeth_tower</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>英国</name>
+        <phonetic>yīng guó</phonetic>
+        <english>English</english>
+        <picture>english_flag</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>伦敦</name>
+        <phonetic>lún dūn</phonetic>
+        <english>London</english>
+        <picture>elizabeth_tower_1</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>塔</name>
+        <phonetic>tǎ</phonetic>
+        <english>tower</english>
+        <picture>elizabeth_tower_2</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+</scenic_spots>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scenic_spots>
+    <scenic_spot>
+        <name>埃菲尔铁塔</name>
+        <phonetic>āi fēi ěr tiě tǎ</phonetic>
+        <english>the Eiffel Tower</english>
+        <picture>the_eiffel_tower</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>法国</name>
+        <phonetic>fǎ guó</phonetic>
+        <english>France</english>
+        <picture>french_flag</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>巴黎</name>
+        <phonetic>bā lí</phonetic>
+        <english>Paris</english>
+        <picture>the_eiffel_tower_2</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>高度</name>
+        <phonetic>gāo dù</phonetic>
+        <english>height</english>
+        <picture>the_eiffel_tower_1</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+</scenic_spots>

@@ -63,5 +63,6 @@ public class StartActivity extends BaseActivity implements StartContract.View{
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        presenter.doDestroy();
     }
 }
