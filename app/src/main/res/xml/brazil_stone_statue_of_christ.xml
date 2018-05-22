@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scenic_spots>
+    <scenic_spot>
+        <name>巴西耶稣像</name>
+        <phonetic>bā xī yē sū xiàng</phonetic>
+        <english>Brazil stone statue of Christ</english>
+        <picture>brazil_stone_statue_of_christ</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>巴西</name>
+        <phonetic>bā xī</phonetic>
+        <english>Brazil</english>
+        <picture>brazil_flag</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>象征</name>
+        <phonetic>xiàng zhēng</phonetic>
+        <english>symbol</english>
+        <picture>brazil_stone_statue_of_christ_1</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>欢迎</name>
+        <phonetic>huān yíng</phonetic>
+        <english>welcome</english>
+        <picture>brazil_stone_statue_of_christ_2</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+</scenic_spots>

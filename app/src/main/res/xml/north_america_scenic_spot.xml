@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scenic_spots>
+    <scenic_spot>
+        <name>自由女神像</name>
+        <phonetic>zì yóu nǚ shén xiàng</phonetic>
+        <english>Statue Of Liberty</english>
+        <continent>北美洲</continent>
+        <location>美国纽约</location>
+        <picture>statue_of_liberty</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>太阳金字塔</name>
+        <phonetic>tài yáng jīn zì tǎ</phonetic>
+        <english>The Pyramid of the sun</english>
+        <continent>北美洲</continent>
+        <location>墨西哥</location>
+        <picture>the_pyramid_of_the_sun</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>加拿大国家电视塔</name>
+        <phonetic>jiā ná dà guó jiā diàn shì tǎ</phonetic>
+        <english>the CN Tower</english>
+        <continent>北美洲</continent>
+        <location>加拿大</location>
+        <picture>the_cn_tower</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+</scenic_spots>

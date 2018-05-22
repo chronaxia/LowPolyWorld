@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scenic_spots>
+    <scenic_spot>
+        <name>悉尼歌剧院</name>
+        <phonetic>xī ní gē jù yuàn</phonetic>
+        <english>Sydney Opera House</english>
+        <picture>sydney_opera_house</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>澳大利亚</name>
+        <phonetic>ào dà lì yà</phonetic>
+        <english>Australia</english>
+        <picture>australia_flag</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>剧院</name>
+        <phonetic>jù yuàn</phonetic>
+        <english>theatre</english>
+        <picture>sydney_opera_house_1</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>建筑</name>
+        <phonetic>jiàn zhù</phonetic>
+        <english>building</english>
+        <picture>sydney_opera_house_2</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+</scenic_spots>

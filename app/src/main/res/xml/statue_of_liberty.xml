@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scenic_spots>
+    <scenic_spot>
+        <name>自由女神像</name>
+        <phonetic>zì yóu nǚ shén xiàng</phonetic>
+        <english>Statue Of Liberty</english>
+        <picture>statue_of_liberty</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>美国</name>
+        <phonetic>měi guó</phonetic>
+        <english>America</english>
+        <picture>america_flag</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>自由</name>
+        <phonetic>zì yóu</phonetic>
+        <english>freedom</english>
+        <picture>statue_of_liberty_1</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>火炬</name>
+        <phonetic>huǒ jù</phonetic>
+        <english>torch</english>
+        <picture>statue_of_liberty_2</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+</scenic_spots>

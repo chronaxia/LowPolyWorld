@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scenic_spots>
+    <scenic_spot>
+        <name>悉尼歌剧院</name>
+        <phonetic>xī ní gē jù yuàn</phonetic>
+        <english>Sydney Opera House</english>
+        <continent>大洋洲</continent>
+        <location>澳大利亚</location>
+        <picture>sydney_opera_house</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+</scenic_spots>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scenic_spots>
+    <scenic_spot>
+        <name>复活节岛石像</name>
+        <phonetic>fù huó jiē dǎo shí xiàng</phonetic>
+        <english>Easter Island Statues</english>
+        <picture>moai</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>智利</name>
+        <phonetic>zhì lì</phonetic>
+        <english>Chile</english>
+        <picture>chile_flag</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>岛屿</name>
+        <phonetic>dǎo yǔ</phonetic>
+        <english>islands</english>
+        <picture>moai_1</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>石头</name>
+        <phonetic>shí tóu</phonetic>
+        <english>stone</english>
+        <picture>moai_2</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+</scenic_spots>

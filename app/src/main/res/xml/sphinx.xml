@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scenic_spots>
+    <scenic_spot>
+        <name>狮身人面像</name>
+        <phonetic>shī shēn rén miàn xiàng</phonetic>
+        <english>sphinx</english>
+        <picture>sphinx</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>埃及</name>
+        <phonetic>āi jí</phonetic>
+        <english>Egypt</english>
+        <picture>egypt_flag</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>怪兽</name>
+        <phonetic>guài shòu</phonetic>
+        <english>monster</english>
+        <picture>sphinx_1</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>金字塔</name>
+        <phonetic>jīn zì tǎ</phonetic>
+        <english>pyramid</english>
+        <picture>sphinx_2</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+</scenic_spots>

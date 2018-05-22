@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scenic_spots>
+    <scenic_spot>
+        <name>太阳金字塔</name>
+        <phonetic>tài yáng jīn zì tǎ</phonetic>
+        <english>The Pyramid of the sun</english>
+        <picture>the_pyramid_of_the_sun</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>墨西哥</name>
+        <phonetic>mò xī gē</phonetic>
+        <english>Mexico</english>
+        <picture>mexico_flag</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>祭祀</name>
+        <phonetic>jì sì</phonetic>
+        <english>sacrifice</english>
+        <picture>the_pyramid_of_the_sun_1</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>太阳</name>
+        <phonetic>tài yáng</phonetic>
+        <english>sun</english>
+        <picture>the_pyramid_of_the_sun_2</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+</scenic_spots>

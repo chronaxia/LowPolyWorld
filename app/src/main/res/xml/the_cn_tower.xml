@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scenic_spots>
+    <scenic_spot>
+        <name>西恩塔</name>
+        <phonetic>xī ēn tǎ</phonetic>
+        <english>the CN Tower</english>
+        <picture>the_cn_tower</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>加拿大</name>
+        <phonetic>jiā ná dà</phonetic>
+        <english>Canada</english>
+        <picture>canada_flag</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>信号</name>
+        <phonetic>xìn hào</phonetic>
+        <english>signal</english>
+        <picture>the_cn_tower_1</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>电视</name>
+        <phonetic>diàn shì</phonetic>
+        <english>television</english>
+        <picture>the_cn_tower_2</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+</scenic_spots>

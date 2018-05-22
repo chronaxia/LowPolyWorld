@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scenic_spots>
+    <scenic_spot>
+        <name>泰姬陵</name>
+        <phonetic>tài jī líng</phonetic>
+        <english>Taj Mahal</english>
+        <picture>taj_mahal</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>印度</name>
+        <phonetic>yìn dù</phonetic>
+        <english>India</english>
+        <picture>india_flag</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>陵墓</name>
+        <phonetic>líng mù</phonetic>
+        <english>mausoleum</english>
+        <picture>taj_mahal_1</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>爱</name>
+        <phonetic>ài</phonetic>
+        <english>love</english>
+        <picture>taj_mahal_2</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+</scenic_spots>

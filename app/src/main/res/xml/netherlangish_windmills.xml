@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scenic_spots>
+    <scenic_spot>
+        <name>荷兰风车</name>
+        <phonetic>hé lán fēng chē</phonetic>
+        <english>Netherlangish windmills</english>
+        <picture>netherlangish_windmills</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>荷兰</name>
+        <phonetic>hé lán</phonetic>
+        <english>Netherlands</english>
+        <picture>netherlangish_flag</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>风车</name>
+        <phonetic>fēng chē</phonetic>
+        <english>windmill</english>
+        <picture>netherlangish_windmills_1</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>薰衣草</name>
+        <phonetic>xūn yī cǎo</phonetic>
+        <english>lavender</english>
+        <picture>netherlangish_windmills_2</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+</scenic_spots>

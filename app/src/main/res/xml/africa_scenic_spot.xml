@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scenic_spots>
+    <scenic_spot>
+        <name>狮身人面像</name>
+        <phonetic>shī shēn rén miàn xiàng</phonetic>
+        <english>sphinx</english>
+        <continent>非洲</continent>
+        <location>埃及</location>
+        <picture>sphinx</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+</scenic_spots>

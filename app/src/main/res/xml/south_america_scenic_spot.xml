@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scenic_spots>
+    <scenic_spot>
+        <name>摩艾石像</name>
+        <phonetic>mó ài shí xiàng</phonetic>
+        <english>Moai</english>
+        <continent>大洋洲</continent>
+        <location>复活节岛</location>
+        <picture>moai</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>天空之镜</name>
+        <phonetic>tiān kōng zhī jìng</phonetic>
+        <english>The mirror of the sky</english>
+        <continent>大洋洲</continent>
+        <location>复活节岛</location>
+        <picture>salt_marsh_in_uyuni</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>巴西耶稣像</name>
+        <phonetic>bā xī yē sū xiàng</phonetic>
+        <english>Brazil stone statue of Christ</english>
+        <continent>南美洲</continent>
+        <location>巴西</location>
+        <picture>brazil_stone_statue_of_christ</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+</scenic_spots>

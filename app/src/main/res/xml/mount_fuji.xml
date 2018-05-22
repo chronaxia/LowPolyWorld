@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scenic_spots>
+    <scenic_spot>
+        <name>富士山</name>
+        <phonetic>fù shì shān</phonetic>
+        <english>Mount Fuji</english>
+        <picture>mount_fuji</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>日本</name>
+        <phonetic>rì běn</phonetic>
+        <english>Japan</english>
+        <picture>japan_flag</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>火山</name>
+        <phonetic>huǒ shān</phonetic>
+        <english>volcano</english>
+        <picture>mount_fuji_1</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>樱花</name>
+        <phonetic>yīng huā</phonetic>
+        <english>sakura</english>
+        <picture>mount_fuji_2</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+</scenic_spots>

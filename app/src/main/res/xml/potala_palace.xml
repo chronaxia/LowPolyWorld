@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scenic_spots>
+    <scenic_spot>
+        <name>布达拉宫</name>
+        <phonetic>bù dá lā gōng</phonetic>
+        <english>Potala Palace</english>
+        <picture>potala_palace</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>西藏</name>
+        <phonetic>xī zàng</phonetic>
+        <english>Tibet</english>
+        <picture>potala_palace_1</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>宫殿</name>
+        <phonetic>gōng diàn</phonetic>
+        <english>palace</english>
+        <picture>potala_palace_2</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>佛像</name>
+        <phonetic>fó xiàng</phonetic>
+        <english>buddha statue</english>
+        <picture>potala_palace_3</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+</scenic_spots>

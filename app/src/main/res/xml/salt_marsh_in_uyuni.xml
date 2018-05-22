@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scenic_spots>
+    <scenic_spot>
+        <name>乌尤尼盐沼</name>
+        <phonetic>wū yóu ní yán zhǎo</phonetic>
+        <english>Salt marsh in Uyuni</english>
+        <picture>salt_marsh_in_uyuni</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>玻利维亚</name>
+        <phonetic>bō lì wéi yà</phonetic>
+        <english>Bolivia</english>
+        <picture>bolivia_flag</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>天空</name>
+        <phonetic>tiān kōng</phonetic>
+        <english>sky</english>
+        <picture>salt_marsh_in_uyuni_1</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>镜子</name>
+        <phonetic>jìng zǐ</phonetic>
+        <english>mirror</english>
+        <picture>salt_marsh_in_uyuni_2</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+</scenic_spots>

@@ -27,4 +27,13 @@
         <picture>elizabeth_tower</picture>
         <describe>0.0</describe>
     </scenic_spot>
+    <scenic_spot>
+        <name>荷兰风车</name>
+        <phonetic>hé lán fēng chē</phonetic>
+        <english>Netherlangish windmills</english>
+        <continent>欧洲</continent>
+        <location>荷兰</location>
+        <picture>netherlangish_windmills</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
 </scenic_spots>

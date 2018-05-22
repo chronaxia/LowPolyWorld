@@ -9,4 +9,40 @@
         <picture>the_great_wall</picture>
         <describe>0.0</describe>
     </scenic_spot>
+    <scenic_spot>
+        <name>布达拉宫</name>
+        <phonetic>bù dá lā gōng</phonetic>
+        <english>Potala Palace</english>
+        <continent>亚洲</continent>
+        <location>西藏自治区拉萨市</location>
+        <picture>potala_palace</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>富士山</name>
+        <phonetic>fù shì shān</phonetic>
+        <english>Mount Fuji</english>
+        <continent>亚洲</continent>
+        <location>日本</location>
+        <picture>mount_fuji</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>泰姬陵</name>
+        <phonetic>tài jī líng</phonetic>
+        <english>Taj Mahal</english>
+        <continent>亚洲</continent>
+        <location>印度</location>
+        <picture>taj_mahal</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>莫斯科红场</name>
+        <phonetic>mò sī kē hóng chǎng</phonetic>
+        <english>Red Square</english>
+        <continent>亚洲</continent>
+        <location>俄罗斯</location>
+        <picture>red_square</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
 </scenic_spots>

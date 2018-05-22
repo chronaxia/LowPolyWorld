@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scenic_spots>
+    <scenic_spot>
+        <name>莫斯科红场</name>
+        <phonetic>mò sī kē hóng chǎng</phonetic>
+        <english>Red Square</english>
+        <picture>red_square</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>俄罗斯</name>
+        <phonetic>é luó sī</phonetic>
+        <english>Russia</english>
+        <picture>russia_flag</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>广场</name>
+        <phonetic>guǎng chǎng</phonetic>
+        <english>square</english>
+        <picture>red_square_1</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+    <scenic_spot>
+        <name>阅兵</name>
+        <phonetic>yuè bīng</phonetic>
+        <english>parade</english>
+        <picture>red_square_2</picture>
+        <describe>0.0</describe>
+    </scenic_spot>
+</scenic_spots>
