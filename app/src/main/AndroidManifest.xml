@@ -34,7 +34,8 @@
         </activity>
         <activity android:name=".view.activity.ScenicSpotsActivity" />
         <activity android:name=".view.activity.IntroduceActivity" />
-        <activity android:name=".view.activity.DistinguishActivity"></activity>
+        <activity android:name=".view.activity.DistinguishActivity" />
+        <activity android:name=".view.activity.PaintActivity"></activity>
     </application>
 
 </manifest>

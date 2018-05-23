@@ -12,6 +12,7 @@ import com.chronaxia.lowpolyworld.presenter.DistinguishPresenter;
 import com.chronaxia.lowpolyworld.presenter.contract.DistinguishContract;
 import com.facebook.rebound.SimpleSpringListener;
 import com.facebook.rebound.Spring;
+import com.facebook.rebound.SpringConfig;
 import com.facebook.rebound.SpringSystem;
 import com.jakewharton.rxbinding2.view.RxView;
 
@@ -207,21 +208,18 @@ public class DistinguishActivity extends BaseActivity implements DistinguishCont
         tvQuestionName.setText(selectQuestion.getQuestionName());
         tvQuestionEnglish.setText(selectQuestion.getQuestionEnglish());
         SpringSystem springSystem = SpringSystem.create();
-        // Add a spring to the system.
         Spring spring = springSystem.createSpring();
-        // Add a listener to observe the motion of the spring.
-        spring.addListener(new SimpleSpringListener() {
+        spring.setCurrentValue(0.7f);
+        spring.setSpringConfig(new SpringConfig(50,5));
+        spring.addListener(new SimpleSpringListener(){
             @Override
             public void onSpringUpdate(Spring spring) {
-                // You can observe the updates in the spring
-                // state by asking its current value in onSpringUpdate.
-                float value = (float) spring.getCurrentValue();
-                float scale = 1f - (value * 0.5f);
-                ivQuestion.setScaleX(scale);
-                ivQuestion.setScaleY(scale);
+                super.onSpringUpdate(spring);
+                float currentValue = (float) spring.getCurrentValue();
+                ivQuestion.setScaleX(currentValue);
+                ivQuestion.setScaleY(currentValue);
             }
         });
-        // Set the spring in motion; moving from 0 to 1
         spring.setEndValue(1);
     }
 

@@ -205,7 +205,7 @@ public class MainActivity extends BaseActivity implements MainContract.View{
                         if (buttonIndex == 0) {
                             startActivity(new Intent(MainActivity.this, DistinguishActivity.class));
                         } else if (buttonIndex == 1) {
-                            Toasty.success(MainActivity.this, "1").show();
+                            startActivity(new Intent(MainActivity.this, PaintActivity.class));
                         }
                     }
                 })
