@@ -32,8 +32,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.activity.ScenicSpotsActivity"></activity>
-        <activity android:name=".view.activity.IntroduceActivity"></activity>
+        <activity android:name=".view.activity.ScenicSpotsActivity" />
+        <activity android:name=".view.activity.IntroduceActivity" />
+        <activity android:name=".view.activity.DistinguishActivity"></activity>
     </application>
 
 </manifest>

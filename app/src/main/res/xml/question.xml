@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<questions>
+    <question>
+        <question_name></question_name>
+        <question_picture></question_picture>
+        <question_phonetic></question_phonetic>
+        <question_english></question_english>
+        <left_answer_name></left_answer_name>
+        <left_answer_picture></left_answer_picture>
+        <right_answer_name></right_answer_name>
+        <right_answer_picture></right_answer_picture>
+        <answer></answer>
+    </question>
+</questions>

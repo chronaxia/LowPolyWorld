@@ -1,6 +1,7 @@
 package com.chronaxia.lowpolyworld.view.activity;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.net.Uri;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.ActivityOptionsCompat;
@@ -107,8 +108,12 @@ public class ScenicSpotsActivity extends BaseActivity implements ScenicSpotsCont
     private void startInfoActivity(View view, ScenicSpot scenicSpot) {
         ActivityOptionsCompat options =
                 ActivityOptionsCompat.makeSceneTransitionAnimation(this, view, getString(R.string.transition_name));
-        ActivityCompat.startActivity(this,
-                IntroduceActivity.newInstance(this, scenicSpot),options.toBundle());
+        Intent intent = new Intent();
+        if (scenicSpot.getLocation().equals("zoo")) {
+        } else {
+            intent = IntroduceActivity.newInstance(this, scenicSpot);
+        }
+        ActivityCompat.startActivity(this, intent,options.toBundle());
     }
 
     @Override

@@ -125,7 +125,7 @@ public class ZoomImageView extends android.support.v7.widget.AppCompatImageView 
                 });
     }
 
-    public boolean test(MotionEvent e, float midscale) {
+    public boolean myDoScale(MotionEvent e, float midscale) {
         if (isAutoScale) {
             return true;
         }
