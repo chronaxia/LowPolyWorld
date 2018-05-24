@@ -2,6 +2,7 @@ package com.chronaxia.lowpolyworld.view.custom;
 
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -14,6 +15,7 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 
+import com.chronaxia.lowpolyworld.R;
 import com.chronaxia.lowpolyworld.util.DimenUtils;
 
 import java.util.ArrayList;
@@ -235,8 +237,17 @@ public class PaletteView extends View {
     }
 
     public Bitmap buildBitmap() {
-        Bitmap bm = getDrawingCache();
-        Bitmap result = Bitmap.createBitmap(bm);
+        Bitmap bitmap = getDrawingCache();
+        Bitmap result = Bitmap.createBitmap(bitmap);
+        Canvas canvas = new Canvas(result);
+        //加载背景图片
+        Bitmap bmps = BitmapFactory.decodeResource(getResources(), R.drawable.white);
+        canvas.drawBitmap(bmps, 0, 0, null);
+        //加载要保存的画面
+        canvas.drawBitmap(bitmap, 10, 100, null);
+        //保存全部图层
+        canvas.save(Canvas.ALL_SAVE_FLAG);
+        canvas.restore();
         destroyDrawingCache();
         return result;
     }

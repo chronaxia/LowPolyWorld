@@ -3,68 +3,113 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:orientation="horizontal"
+    android:background="@color/white"
     >
 
-    <com.chronaxia.lowpolyworld.view.custom.PaletteView
-        android:id="@+id/palette"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="@drawable/bg"
-        />
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <com.chronaxia.lowpolyworld.view.custom.PaletteView
+            android:id="@+id/palette"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <ImageView
+            android:id="@+id/iv_template"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/bg_border"
+            android:scaleType="fitCenter"/>
+
+    </FrameLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:orientation="horizontal"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
         android:gravity="center"
+        android:background="@drawable/ic_paint_toolbar_back"
         >
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
         <ImageView
-            android:id="@+id/undo"
+            android:id="@+id/iv_undo"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
             android:layout_weight="1"
-            android:scaleType="centerInside"
+            android:scaleType="fitCenter"
             android:src="@drawable/undo"
-            android:background="@drawable/toolbar_item_bg"
             />
         <ImageView
-            android:id="@+id/redo"
+            android:id="@+id/iv_redo"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
             android:layout_weight="1"
-            android:scaleType="centerInside"
+            android:scaleType="fitCenter"
             android:src="@drawable/redo"
-            android:background="@drawable/toolbar_item_bg"
             />
         <ImageView
-            android:id="@+id/pen"
+            android:id="@+id/iv_pen"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:scaleType="centerInside"
+            android:layout_height="0dp"
+            android:scaleType="fitCenter"
             android:layout_weight="1"
             android:src="@drawable/pen"
-            android:background="@drawable/toolbar_item_bg"
             />
         <ImageView
-            android:id="@+id/eraser"
+            android:id="@+id/iv_color"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:scaleType="centerInside"
+            android:layout_height="0dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:src="@drawable/ic_color"
+            />
+        <ImageView
+            android:id="@+id/iv_eraser"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:scaleType="fitCenter"
             android:layout_weight="1"
             android:src="@drawable/eraser"
-            android:background="@drawable/toolbar_item_bg"
             />
         <ImageView
-            android:id="@+id/clear"
+            android:id="@+id/iv_clear"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
             android:layout_weight="1"
-            android:scaleType="centerInside"
+            android:scaleType="fitCenter"
             android:src="@drawable/clear"
-            android:background="@drawable/toolbar_item_bg"
             />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/iv_save"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_save"
+            />
+        <ImageView
+            android:id="@+id/iv_paint_back"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_back_orange"
+            />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
     </LinearLayout>
 </LinearLayout>
 
