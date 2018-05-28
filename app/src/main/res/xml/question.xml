@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <questions>
     <question>
-        <question_name>羚羊</question_name>
-        <question_picture>antelope</question_picture>
-        <question_phonetic>líng yáng</question_phonetic>
-        <question_english>antelope</question_english>
-        <left_answer_name>欧洲野牛</left_answer_name>
-        <left_answer_picture>answer_european_bison</left_answer_picture>
-        <right_answer_name>羚羊</right_answer_name>
-        <right_answer_picture>answer_antelope</right_answer_picture>
-        <answer>right</answer>
+        <question_name>羚羊</question_name>       <!-- 问题描述动物名称 -->
+        <question_picture>antelope</question_picture>       <!-- 问题图片 -->
+        <question_phonetic>líng yáng</question_phonetic>       <!-- 问题描述动物名称拼音 -->
+        <question_english>antelope</question_english>       <!-- 问题描述动物名称英文 -->
+        <left_answer_name>欧洲野牛</left_answer_name>       <!-- 左答案描述动物名称 -->
+        <left_answer_picture>answer_european_bison</left_answer_picture>       <!-- 左答案描述动物图片 -->
+        <right_answer_name>羚羊</right_answer_name>       <!-- 右答案描述动物名称 -->
+        <right_answer_picture>answer_antelope</right_answer_picture>       <!-- 右答案描述动物图片 -->
+        <answer>right</answer>       <!-- 答案 -->
     </question>
 </questions>

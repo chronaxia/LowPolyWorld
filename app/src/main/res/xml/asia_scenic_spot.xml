@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <scenic_spots>
     <scenic_spot>
-        <name>长城</name>
-        <phonetic>chǎng chéng</phonetic>
-        <english>The Great Wall</english>
-        <continent>亚洲</continent>
-        <location>中国北方</location>
-        <picture>the_great_wall</picture>
-        <describe>0.0</describe>
+        <name>长城</name>     <!-- 名胜古迹名称 -->
+        <phonetic>chǎng chéng</phonetic>     <!-- 名胜古迹名称拼音 -->
+        <english>The Great Wall</english>     <!-- 名胜古迹名称英文 -->
+        <continent>亚洲</continent>     <!-- 名胜古迹所属大洲 -->
+        <location>中国北方</location>     <!-- 名胜古迹所在地 -->
+        <picture>the_great_wall</picture>     <!-- 名胜古迹封面图片名称 -->
+        <describe>0.0</describe>     <!-- 名胜古迹描述 -->
     </scenic_spot>
     <scenic_spot>
         <name>布达拉宫</name>

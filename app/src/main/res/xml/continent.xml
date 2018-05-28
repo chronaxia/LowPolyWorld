@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <continents>
     <continent>
-        <name>亚洲</name>
-        <phonetic>yà zhōu</phonetic>
-        <english>Asia</english>
+        <name>亚洲</name>     <!-- 洲名称 -->
+        <phonetic>yà zhōu</phonetic>     <!-- 洲名称拼音 -->
+        <english>Asia</english>     <!-- 洲名称英文 -->
     </continent>
     <continent>
         <name>欧洲</name>

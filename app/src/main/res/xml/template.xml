@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <templates>
-    <template>template_1</template>
+    <template>template_1</template>     <!-- 参考画图片名称 -->
     <template>template_2</template>
     <template>template_3</template>
     <template>template_4</template>

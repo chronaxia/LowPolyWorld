@@ -13,6 +13,7 @@ import com.bumptech.glide.module.AppGlideModule;
 import com.chronaxia.lowpolyworld.model.local.greenDao.GreenDaoContext;
 import com.chronaxia.lowpolyworld.model.local.greenDao.gen.DaoMaster;
 import com.chronaxia.lowpolyworld.model.local.greenDao.gen.DaoSession;
+import com.chronaxia.lowpolyworld.util.AudioUtil;
 
 import java.lang.reflect.Method;
 
@@ -28,6 +29,7 @@ public class LowPolyWorldApp extends Application{
     private SQLiteDatabase db;
     private DaoMaster daoMaster;
     private DaoSession daoSession;
+    private AudioUtil audioUtil;
     private int x;
     private int y;
 
@@ -49,6 +51,11 @@ public class LowPolyWorldApp extends Application{
         db = helper.getWritableDatabase();
         daoMaster = new DaoMaster(db);
         daoSession = daoMaster.newSession();
+        audioUtil = new AudioUtil();
+    }
+
+    public AudioUtil getAudioUtil() {
+        return audioUtil;
     }
 
     public float getX() {

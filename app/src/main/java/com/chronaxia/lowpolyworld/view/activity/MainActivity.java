@@ -3,6 +3,8 @@ package com.chronaxia.lowpolyworld.view.activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
+import android.media.MediaPlayer;
+import android.os.Environment;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -14,9 +16,11 @@ import android.widget.TextView;
 import com.chronaxia.lowpolyworld.R;
 import com.chronaxia.lowpolyworld.app.LowPolyWorldApp;
 import com.chronaxia.lowpolyworld.model.entity.Continent;
+import com.chronaxia.lowpolyworld.model.retrofit.AudioNet;
 import com.chronaxia.lowpolyworld.presenter.MainPresenter;
 import com.chronaxia.lowpolyworld.presenter.contract.MainContract;
 import com.chronaxia.lowpolyworld.view.custom.ZoomImageView;
+import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import com.jakewharton.rxbinding2.view.RxView;
 import com.nightonke.boommenu.BoomMenuButton;
 import com.nightonke.boommenu.Eases.EaseType;
@@ -28,14 +32,26 @@ import com.nightonke.boommenu.Types.OrderType;
 import com.nightonke.boommenu.Types.PlaceType;
 import com.nightonke.boommenu.Util;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.text.NumberFormat;
-import java.util.Observable;
 import java.util.concurrent.TimeUnit;
 
 import butterknife.BindView;
 import es.dmoral.toasty.Toasty;
+import io.reactivex.Observable;
+import io.reactivex.ObservableSource;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.functions.Consumer;
+import io.reactivex.functions.Function;
+import io.reactivex.schedulers.Schedulers;
+import okhttp3.ResponseBody;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends BaseActivity implements MainContract.View{
 
@@ -157,6 +173,39 @@ public class MainActivity extends BaseActivity implements MainContract.View{
                             intent.putExtra("continent", selectContinent);
                             startActivity(intent);
                         }
+                    }
+                });
+        RxView.clicks(tvContinentName)
+                .throttleFirst(500, TimeUnit.MILLISECONDS)
+                .subscribeOn(AndroidSchedulers.mainThread())
+                .compose(this.bindToLifecycle())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(new Consumer<Object>() {
+                    @Override
+                    public void accept(Object o) throws Exception {
+                        LowPolyWorldApp.getInstance().getAudioUtil().textToAudio(tvContinentName.getText().toString());
+                    }
+                });
+        RxView.clicks(tvContinentEnglish)
+                .throttleFirst(500, TimeUnit.MILLISECONDS)
+                .subscribeOn(AndroidSchedulers.mainThread())
+                .compose(this.bindToLifecycle())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(new Consumer<Object>() {
+                    @Override
+                    public void accept(Object o) throws Exception {
+                        LowPolyWorldApp.getInstance().getAudioUtil().textToAudio(tvContinentName.getText().toString());
+                    }
+                });
+        RxView.clicks(tvContinentEnglish)
+                .throttleFirst(500, TimeUnit.MILLISECONDS)
+                .subscribeOn(AndroidSchedulers.mainThread())
+                .compose(this.bindToLifecycle())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(new Consumer<Object>() {
+                    @Override
+                    public void accept(Object o) throws Exception {
+                        LowPolyWorldApp.getInstance().getAudioUtil().textToAudio(tvContinentEnglish.getText().toString());
                     }
                 });
     }

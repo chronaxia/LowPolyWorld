@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <scenic_spots>
     <scenic_spot>
-        <name>巴西耶稣像</name>
-        <phonetic>bā xī yē sū xiàng</phonetic>
-        <english>Brazil stone statue of Christ</english>
-        <picture>brazil_stone_statue_of_christ</picture>
-        <describe>0.0</describe>
+        <name>巴西耶稣像</name>      <!-- 展示文字 -->
+        <phonetic>bā xī yē sū xiàng</phonetic>      <!-- 展示文字拼音 -->
+        <english>Brazil stone statue of Christ</english>      <!-- 展示文字英文 -->
+        <picture>brazil_stone_statue_of_christ</picture>      <!-- 展示图片名称 -->
+        <describe>0.0</describe>      <!-- 语音描述文字 -->
     </scenic_spot>
     <scenic_spot>
         <name>巴西</name>

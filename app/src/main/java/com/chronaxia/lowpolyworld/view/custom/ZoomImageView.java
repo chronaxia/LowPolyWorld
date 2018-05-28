@@ -461,7 +461,7 @@ public class ZoomImageView extends android.support.v7.widget.AppCompatImageView 
         if (mGestureDetector.onTouchEvent(event)) {
             return true;
         }
-/*
+
         // 將事件传给ScaleGestureDetector处理
         mScaleGestureDetector.onTouchEvent(event);
         // 用于记录多点触碰的中心点
@@ -532,7 +532,7 @@ public class ZoomImageView extends android.support.v7.widget.AppCompatImageView 
                 break;
             default:
                 break;
-        }*/
+        }
         return true;
     }
 
