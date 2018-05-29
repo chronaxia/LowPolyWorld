@@ -11,6 +11,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.Switch;
 import android.widget.TextView;
 
 import com.chronaxia.lowpolyworld.R;
@@ -19,6 +20,7 @@ import com.chronaxia.lowpolyworld.model.entity.Continent;
 import com.chronaxia.lowpolyworld.model.retrofit.AudioNet;
 import com.chronaxia.lowpolyworld.presenter.MainPresenter;
 import com.chronaxia.lowpolyworld.presenter.contract.MainContract;
+import com.chronaxia.lowpolyworld.util.AudioUtil;
 import com.chronaxia.lowpolyworld.view.custom.ZoomImageView;
 import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import com.jakewharton.rxbinding2.view.RxView;
@@ -67,6 +69,8 @@ public class MainActivity extends BaseActivity implements MainContract.View{
     TextView tvContinentEnglish;
     @BindView(R.id.btn_test)
     Button btnTest;
+    @BindView(R.id.btn_record_test)
+    Button btnRecordTest;
     @BindView(R.id.boom)
     BoomMenuButton boomMenuButton;
 
@@ -206,6 +210,30 @@ public class MainActivity extends BaseActivity implements MainContract.View{
                     @Override
                     public void accept(Object o) throws Exception {
                         LowPolyWorldApp.getInstance().getAudioUtil().textToAudio(tvContinentEnglish.getText().toString());
+                    }
+                });
+        RxView.clicks(btnRecordTest)
+                .throttleFirst(500, TimeUnit.MILLISECONDS)
+                .subscribeOn(AndroidSchedulers.mainThread())
+                .compose(this.bindToLifecycle())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(new Consumer<Object>() {
+                    @Override
+                    public void accept(Object o) throws Exception {
+                        if (btnRecordTest.getText().toString().equals("录音")) {
+                            LowPolyWorldApp.getInstance().getAudioUtil().startRecord();
+                            btnRecordTest.setText("取消");
+                        } else if (btnRecordTest.getText().toString().equals("取消")) {
+                            LowPolyWorldApp.getInstance().getAudioUtil().audioToText(new AudioUtil.Callback() {
+                                @Override
+                                public void callback() {
+                                    Toasty.success(MainActivity.this,
+                                            LowPolyWorldApp.getInstance().getAudioUtil().getAudioTextList().get(0),
+                                            0, true).show();
+                                }
+                            });
+                            btnRecordTest.setText("录音");
+                        }
                     }
                 });
     }

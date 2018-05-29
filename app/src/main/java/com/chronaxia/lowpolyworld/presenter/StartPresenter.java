@@ -29,7 +29,8 @@ public class StartPresenter extends BaseActivityPresenter implements StartContra
         RxPermissions rxPermission = new RxPermissions(activity);
         rxPermission
                 .request(Manifest.permission.READ_EXTERNAL_STORAGE,
-                        Manifest.permission.WRITE_EXTERNAL_STORAGE)
+                        Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                        Manifest.permission.RECORD_AUDIO)
                 .subscribeOn(AndroidSchedulers.mainThread())
                 .compose(getProvider().<Boolean>bindToLifecycle())
                 .observeOn(AndroidSchedulers.mainThread())

@@ -18,7 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="100dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="0dp"
         android:layout_marginLeft="100dp"
         android:layout_marginRight="100dp"
         android:orientation="vertical"
@@ -51,6 +51,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="探险"/>
+
+        <Button
+            android:id="@+id/btn_record_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="录音"/>
 
     </LinearLayout>
 
